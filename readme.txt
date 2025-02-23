@@ -31,13 +31,13 @@ Dal terminale date il comando:
 
 mysql -u root -p -h 127.0.0.1
 
-la password è “mariadb”, si avvia la console del database e da li create il database “club”: 
+la password è “mariadb”, si avvia la console del database e da li create il database “esempio”: 
 
 create database esempio;
 
 Verrà creato il database, per usarlo dovete avvertire il motore database con il comando: 
-use club; 
-da questo momento in poi tutte le query verranno effettuate in quel database, alternativamente potete far precedere ai nomi delle tabelle quelle del DB, esempio SELECT * FROM iscritti; diventa SELECT * FRM club.iscritti;
+use esempio; 
+da questo momento in poi tutte le query verranno effettuate in quel database, alternativamente potete far precedere ai nomi delle tabelle quelle del DB, esempio SELECT * FROM iscritti; diventa SELECT * FRM esempio.iscritti;
 
 Per uscire dal motore DB usate il comando: quit;
 
@@ -47,7 +47,7 @@ mysql -p -u root esempio -h 127.0.0.1 < ../db/dump_database/esempio.sql
 
 In qualsiasi momento potete fare un backup con il comando:
 
-mysqldump -u root -p -h 127.0.0.1 club > db//dump_database/backup_nome_scelto.sql
+mysqldump -u root -p -h 127.0.0.1 esempio > db//dump_database/backup_nome_scelto.sql
 
 attenzione al percorso del file, l’esempio vale se vi trovate con il terminale nella “root” del sito
 
