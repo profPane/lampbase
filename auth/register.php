@@ -1,7 +1,7 @@
 <?php // creo un utente con i dati ricevuti 
 session_start(); //ripristino sessione
 
-require_once("database.php");
+require_once("/db/database.php");
 
 if (isset($_POST['register'])) { //
     $username = $_POST['username'] ?? '';
