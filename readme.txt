@@ -5,7 +5,7 @@ Contiene un esempio embrionale di autenticazione in PHP
 
 Create il vostro account Github www.github.com e loggate.
 
-Collegatevi a https://github.com/profPane/lamp
+Collegatevi a https://github.com/profPane/lampbase
 
 Premete il pulsante verde “Use this template” vi apparirà una pagina come da foto
 
