@@ -2,9 +2,9 @@
 $config = [
     'db_engine' => 'mysql',
     'db_host' => '127.0.0.1',
-    'db_name' => 'club',
-    'db_user' => 'admin_club',
-    'db_password' => '12345678',
+    'db_name' => 'esempio',
+    'db_user' => 'root',
+    'db_password' => 'mariadb',
 ];
 
 $db_config = $config['db_engine'] . ":host=".$config['db_host'] . ";dbname=" . $config['db_name'];

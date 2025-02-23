@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once('/db/database.php');
+require_once('../db/database.php');
 
 if (isset($_SESSION['session_id'])) {
     header('Location: dashboard.php');
