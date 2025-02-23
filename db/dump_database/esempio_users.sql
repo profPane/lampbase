@@ -16,34 +16,6 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `iscritti`
---
-
-DROP TABLE IF EXISTS `iscritti`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `iscritti` (
-  `nome` varchar(30) DEFAULT NULL,
-  `cognome` varchar(30) DEFAULT NULL,
-  `email` varchar(30) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `iscritti`
---
-
-/*!40000 ALTER TABLE `iscritti` DISABLE KEYS */;
-INSERT INTO `iscritti` VALUES
-('John','Doe','john@example.com'),
-('Mario','Rossi','mario@example.com'),
-('John','Doe','john@example.com'),
-('John','Doe','john@example.com'),
-('alfio','il pazzo','pazzo@pozzo.it'),
-('turi','babbiuni','bb@cc.com');
-/*!40000 ALTER TABLE `iscritti` ENABLE KEYS */;
-
---
 -- Table structure for table `users`
 --
 
@@ -66,8 +38,8 @@ CREATE TABLE `users` (
 
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
 INSERT INTO `users` VALUES
-(3,'admin','$2y$10$5OThg1YatiDww3m7QGDxOu/tOM09yp76W940PvjpTZzb.ABQ7VSCW',9),
-(8,'ospite','$2y$10$BMmiMQdwhn7KD6AFOKEXoOTnuwBUHSLbrFq6ON2qgAK4i8Ekk1YK.',0);
+(3,'admin','$2y$10$5OThg1YatiDww3m7QGDxOu/tOM09yp76W940PvjpTZzb.ABQ7VSCW',9), /* pass: admin2025 */
+(8,'ospite','$2y$10$BMmiMQdwhn7KD6AFOKEXoOTnuwBUHSLbrFq6ON2qgAK4i8Ekk1YK.',0); /* pass: ospite2025 */
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 
 --
