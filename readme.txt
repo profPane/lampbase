@@ -43,11 +43,11 @@ Per uscire dal motore DB usate il comando: quit;
 
 Adesso ripristiniamo il backup dal terminale, ATTENZIONE questo elimina ogni eventuale tabella preesistente con i suoi dati, con il comando:
 
-mysql -p -u root esempio -h 127.0.0.1 < ../db/dump_database/esempio.sql
+mysql -p -u root esempio -h 127.0.0.1 < db/dump_database/esempio.sql
 
 In qualsiasi momento potete fare un backup con il comando:
 
-mysqldump -u root -p -h 127.0.0.1 esempio > db//dump_database/backup_nome_scelto.sql
+mysqldump -u root -p -h 127.0.0.1 esempio > db/dump_database/backup_nome_scelto.sql
 
 attenzione al percorso del file, l’esempio vale se vi trovate con il terminale nella “root” del sito
 
