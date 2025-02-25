@@ -58,12 +58,12 @@ if (isset($_POST['register'])) { //
             $check->execute();
             
             if ($check->rowCount() > 0) {
-                $msg = 'Registrazione eseguita con successo';
+                $msg = 'Registrazione eseguita con successo %s';
             } else {
                 $msg = 'Problemi con l\'inserimento dei dati %s';
             }
         }
     }
+    printf($msg, '<br><a href="../index.html">torna indietro</a>');
 }
-printf($msg, '<br><a href="../registra_utente.php">torna indietro</a>');
 ?>

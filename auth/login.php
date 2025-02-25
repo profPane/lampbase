@@ -39,4 +39,3 @@ if (isset($_POST['login'])) {
         }
     }
 }
-printf($msg, '<a href="../login.html">torna indietro</a>');

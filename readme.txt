@@ -2,7 +2,7 @@ Template LAMP base per codespaces di github, piattaforma che facilita la creazio
 
 Contiene anche un esempio embrionale di autenticazione in PHP
 
-GUIDA per i primi passi.
+GUIDA per i primi passi. ATTENZIONE la versione PDF non è piu aggiornata e viene mantenuta solo per le illustrazioni.
 
 1) Creazione codespace a partire dal "template”
 
