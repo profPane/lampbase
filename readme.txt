@@ -1,4 +1,5 @@
-Template LAMP base per codespaces
+Template LAMP base per codespaces di github, piattaforma che facilita la creazione di un container di tipo https://www.docker.com/, orientato allo sviluppo e connesso a uno o più repository gitub
+
 Contiene anche un esempio embrionale di autenticazione in PHP
 
 GUIDA per i primi passi.
@@ -69,7 +70,7 @@ Connessione: mioDB, Host: 127.0.0.1, Nome (utente): root, Password: mariadb, Por
 Alternativamente potete installare phpMyAdmin:
 sudo apt install phpmyadmin
 
-4) Pubblicare il vostro codice su GitHub
+4) Pubblicare il vostro codice in un repository (deposito del codice) di GitHub
 
 Oltre a tenerlo sulla macchina virtuale di codespaces potete salvare il vostro progetto su GitHub, cliccando su “Controllo del codice” cioè l’icona con i pallini collegati da linee.
 
