@@ -1,7 +1,7 @@
 <?php
 include '../db/database.php'; // Includi il file di configurazione
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if ($_SERVER["REQUEST_METHOD"] == "POST") { //arrivo da un POST
     $query = "
         INSERT INTO iscritti
         VALUES (0, :nome, :cognome, :data_nascita, :email, :telefono, :data_iscrizione, :livello_gioco, :giochi_preferiti, :note)
@@ -56,7 +56,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <input type="tel" id="telefono" name="telefono"><br><br>
 
     <label for="livello_gioco">Livello di Gioco:</label><br>
-    <select id="livello_gioco" name="livello_gioco">
+    <select id="livello_gioco" name="livello_gioco"><? 
         <option value="Principiante">Principiante</option>
         <option value="Intermedio">Intermedio</option>
         <option value="Esperto">Esperto</option>

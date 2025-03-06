@@ -3,7 +3,7 @@ session_start(); //ripristino sessione
 
 require_once("../db/database.php");
 
-if (isset($_POST['register'])) { //
+if (isset($_POST['register'])) { // arrivo da un POST?
     $username = $_POST['username'] ?? '';
     $password = $_POST['password'] ?? '';
     $livello = $_POST['livello'] ?? ''; //livello di accesso

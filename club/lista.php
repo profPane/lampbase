@@ -47,15 +47,16 @@
         ";
     
         $check = $pdo->prepare($query);
-        //$check->bindParam(':username', $username, PDO::PARAM_STR);
-        $check->execute();
+        //$check->bindParam(':citta', $_POST['citta'], PDO::PARAM_STR);
+        $check->execute(); //invio la qury e il risoltato starà in $check
         
-        $iscritti = $check->fetchAll(PDO::FETCH_ASSOC);
-
+        //metto il risultato in un array (matrice) php
+        $iscritti = $check->fetchAll(PDO::FETCH_ASSOC); 
 
         if (count($iscritti) > 0) { //ci sono risultati
+            //visito l'intero array
             foreach ($iscritti as $iscritto) { //per ogni riga dell'array dei risultati
-                echo "<tr>";
+                echo "<tr>"; //crea una nuova riga della tabella
                 echo "<td>" . $iscritto["ID_Iscritto"]. "</td>";
                 echo "<td>" . $iscritto["Nome"]. "</td>";
                 echo "<td>" . $iscritto["Cognome"]. "</td>";
